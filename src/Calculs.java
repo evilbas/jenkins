@@ -22,9 +22,9 @@ public class Calculs
                 return operande1 + operande2;
         }
         
-        public int diviser()
+        public double diviser()
         {
-                return operande1 / operande2;
+                return (double)operande1 / operande2;
         }
         
         public int soustraire()

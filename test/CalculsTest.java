@@ -75,6 +75,26 @@ public class CalculsTest {
 	 * Test method for {@link Calculs#diviser()}.
 	 */
 	
+	  @Test 
+	  void testDiviser() {
+	  
+		  if(c1.diviser() != 0.5) { 
+			  fail("Methode diviser non conforme 1/2=0.5");
+		  }
+		  
+		  if (c2.diviser() != 0.5) {
+			  fail("Methode diviser non conforme 10/20=0.5 ne fonctionne pas."); 
+		  } 
+		  
+		  if
+		  (c3.diviser() != 0.5) {
+			  fail("Methode diviser non conforme 100/200=0.5 ne fonctionne pas."); 
+		  }
+		  
+		  // Est ce que (2 == 42) ? non donc : test en Erreur
+		  assertEquals(c1.diviser(), 0.5, "Methode diviser non conforme 1/2=0.5 ne fonctionne pas"); 
+	}
+	 
 	/**
 	 * Test method for {@link Calculs#soustraire()}.
 	 */
